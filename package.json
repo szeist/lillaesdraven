@@ -1,0 +1,30 @@
+{
+  "name": "lillaesandrascontract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "truffle-init": "truffle init",
+    "truffle-compile": "truffle compile && cp ./build/contracts/SharedWallet.json ./dapp/src/assets/SharedWallet.json",
+    "truffle-migrate-local": "truffle migrate",
+    "truffle-migrate-sepolia": "truffle migrate --network sepolia",
+    "truffle-migrate-mainnet": "truffle migrate --network mainnet",
+    "truffle-test": "truffle test",
+    "truffle-console": "truffle console",
+    "ganache": "ganache --wallet.seed myCustomSeed -e 500"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "@vue/cli": "^5.0.8",
+    "dotenv": "^16.3.1",
+    "ganache": "^7.9.1",
+    "install": "^0.13.0",
+    "keythereum": "^2.0.0",
+    "lite-server": "^2.6.1",
+    "npm": "^10.1.0",
+    "truffle": "^5.11.5",
+    "web3": "^4.1.2"
+  }
+}
